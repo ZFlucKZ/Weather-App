@@ -1,0 +1,18 @@
+.Aside-container {
+  padding: 0 2.5rem;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Aside-container h1 {
+  background: linear-gradient(to right, #373B44 0%, #06b6d4 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
+.Aside-container h1 span {
+  font-size: 1.5rem;
+}

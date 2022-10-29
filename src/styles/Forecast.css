@@ -1,0 +1,15 @@
+.forecast-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.forecast {
+  padding: 0 1.2rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 3px #ecfeff;
+  background-color: #ecfeff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
