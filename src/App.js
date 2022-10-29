@@ -27,7 +27,7 @@ function App() {
     }
     async function forecast(country) {
       let rsp = await m3o.weather.forecast({
-        days: 2,
+        days: 6,
         location: country,
       });
       // console.log('Forecast', rsp);
@@ -62,7 +62,7 @@ function App() {
         </div>
       </aside>
       <div className="right-side">
-        <WeatherDisplay weather={weather} forecast={forecast} />
+        <WeatherDisplay weather={weather} forecasts={forecast} />
       </div>
     </div>
   );

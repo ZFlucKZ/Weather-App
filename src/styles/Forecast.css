@@ -6,10 +6,36 @@
 .forecast {
   padding: 0 1.2rem;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px 3px #ecfeff;
-  background-color: #ecfeff;
+  /* background-color: #ecfeff;
+  box-shadow: 3px 3px 10px 3px #ecfeff; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0.9;
+}
+
+.default {
+  background-color: #ecfeff;
+  box-shadow: 3px 3px 10px 3px #ecfeff;
+}
+
+.clear {
+  background-color: #ecfeff;
+  box-shadow: 3px 3px 10px 3px #ecfeff;
+}
+
+.sunny {
+  background-color: #fef3c7;
+  box-shadow: 3px 3px 10px 3px #fef3c7;
+}
+
+.cloudy {
+  background-color: #e5e7eb;
+  box-shadow: 3px 3px 10px 3px #e5e7eb;
+}
+
+.rain {
+  background-color: #9ca3af;
+  box-shadow: 3px 3px 10px 3px #9ca3af;
 }

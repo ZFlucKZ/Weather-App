@@ -1,7 +1,7 @@
 import '../styles/Weather.css';
 
 function Weather(props) {
-  console.log(props);
+  // console.log(props);
   const weather = props.weather;
 
   return (
@@ -9,11 +9,12 @@ function Weather(props) {
       <h1>
         {weather.location}, {weather.country}
       </h1>
-      <div>
-        <h2>Today</h2>
-        <p>description</p>
-        <p>temperature</p>
-        <p>wind</p>
+      <div className="weather weather-default">
+        <h2>{weather.local_time}</h2>
+        <img src={weather.icon_url} alt="Icon Weather"></img>
+        <span>{weather.condition}</span>
+        <p>Temp. {weather.temp_c} &#8451;</p>
+        <p>Wind: {weather.wind_kph} km/hr</p>
       </div>
     </div>
   );

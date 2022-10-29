@@ -2,3 +2,19 @@
   display: flex;
   justify-content: space-around;
 }
+
+.weather {
+  padding: 0 1.2rem;
+  border-radius: 10px;
+  /* background-color: #ecfeff;
+  box-shadow: 3px 3px 10px 3px #ecfeff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-default {
+  background-color: #93c5fd;
+  box-shadow: 3px 3px 10px 3px #93c5fd;
+}
