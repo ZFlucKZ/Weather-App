@@ -2,8 +2,10 @@ import '../styles/Todolist.css';
 import { useState, useEffect, useRef } from 'react';
 import Navbar from './Navbar';
 import TodolistCard from './TodolistCard';
+import Loading from './Loading';
 
 function Todolist(props) {
+  let loading = props.loading;
   const inputRef = useRef(null);
 
   const [todoList, setTodoList] = useState(() => {
@@ -39,7 +41,7 @@ function Todolist(props) {
   return (
     <div>
       {/* {console.log('RENDER')} */}
-      <Navbar weather={props.weather} />
+      <Navbar weather={props.weather} loading={props.loading} />
       <div className="todo-container">
         <h1>To do list</h1>
         <div className="todo-input-container">

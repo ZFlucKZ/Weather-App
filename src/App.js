@@ -17,6 +17,7 @@ function App() {
   const [weather, setWeather] = useState('');
   const [forecast, setForecast] = useState('');
   const [err, setErr] = useState('');
+  const [loading, setLoading] = useState(true);
 
   const m3o = require('m3o').default(process.env.REACT_APP_M3O_API_TOKEN);
 
@@ -35,6 +36,7 @@ function App() {
     rsp.forecast.shift();
     // console.log('Forecast', rsp.forecast);
     setForecast(rsp);
+    setLoading(false);
   }
 
   useEffect(() => {
@@ -45,6 +47,7 @@ function App() {
     e.preventDefault();
 
     setCountry(inputRef.current.value);
+    setLoading(true);
   };
 
   return (
@@ -70,7 +73,7 @@ function App() {
           </div>
           <div className="form-container">
             <form onSubmit={handleSubmit} className="input-form">
-              <label for="country">City:</label>
+              <label htmlFor="country">City:</label>
               <input type="text" id="country" ref={inputRef}></input>
               <button>Submit</button>
             </form>
@@ -87,10 +90,17 @@ function App() {
             <Route
               path="/"
               element={
-                <WeatherDisplay weather={weather} forecasts={forecast} />
+                <WeatherDisplay
+                  weather={weather}
+                  forecasts={forecast}
+                  loading={loading}
+                />
               }
             />
-            <Route path="/todo" element={<Todolist weather={weather} />} />
+            <Route
+              path="/todo"
+              element={<Todolist weather={weather} loading={loading} />}
+            />
           </Routes>
           {/* <WeatherDisplay weather={weather} forecasts={forecast} /> */}
         </div>
