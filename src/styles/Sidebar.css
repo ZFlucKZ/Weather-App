@@ -4,15 +4,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 2rem;
 }
 
 .Aside-container h1 {
   background: linear-gradient(to right, #373B44 0%, #06b6d4 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
+  font-size: 3.3rem;
+  margin: 0.6rem 0 0 0.6rem;
 }
 
-.Aside-container h1 span {
-  font-size: 1.5rem;
+.Aside-container span {
+  background: linear-gradient(to right, #373B44 0%, #06b6d4 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
 }

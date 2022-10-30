@@ -1,0 +1,31 @@
+.item-card {
+  padding: 0 1.4rem;
+  border: 1px solid #9ca3af;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s all linear;
+}
+
+.item-card:hover {
+  background-color: #eefeff;
+  transform: scale(1.01) translateY(-2px);
+}
+
+.item-card p {
+  font-size: 1.05rem;
+}
+
+.item-card button {
+  font-size: 0.8rem;
+  background-color: #fecaca;
+  border: 1px solid #ef4444;
+}
+
+.item-card button:hover {
+  font-size: 0.8rem;
+  background-color: #ef4444;
+}

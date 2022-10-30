@@ -8,7 +8,8 @@ function Forecast(props) {
       word.toLowerCase() === 'rain' ||
       word.toLowerCase() === 'sunny' ||
       word.toLowerCase() === 'cloudy' ||
-      word.toLowerCase() === 'clear'
+      word.toLowerCase() === 'clear' ||
+      word.toLowerCase() === 'overcast'
   );
   // console.log(conditionFilter);
   conditionFilter = conditionFilter[0].toLowerCase();
@@ -22,7 +23,7 @@ function Forecast(props) {
       <span>{props.forecast.condition}</span>
       <span>rain: {props.forecast.chance_of_rain} %</span>
       <p>
-        Temp.: {props.forecast.min_temp_c} - {props.forecast.max_temp_c} &#8451;
+        {props.forecast.min_temp_c} - {props.forecast.max_temp_c} &#8451;
       </p>
       <p>Wind: {props.forecast.max_wind_kph} km/hr</p>
     </div>
