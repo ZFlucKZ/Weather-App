@@ -1,6 +1,6 @@
 import './App.css';
 import './styles/Sidebar.css';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import WeatherDisplay from './components/WeatherDisplay';
 import Todolist from './components/Todolist';
 import { useState, useEffect, useRef } from 'react';

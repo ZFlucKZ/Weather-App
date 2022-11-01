@@ -14,4 +14,21 @@
 .navbar img {
   width: 50px;
   height: 50px;
+  animation: stamp 0.5s linear 0s 1 backwards;
+}
+
+.navbar p {
+  animation: stamp 0.5s linear 0s 1 backwards;
+}
+
+@keyframes stamp {
+  0% {
+    opacity: 0;
+    transform: translate(30px, -10px) scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
 }

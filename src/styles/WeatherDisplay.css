@@ -10,3 +10,117 @@
   justify-content: space-between;
   position: relative;
 }
+
+.center-1 {
+  position: fixed;
+  top: 5%;
+  left: 0%;
+}
+
+.center-2 {
+  position: fixed;
+  top: 15%;
+  left: 20%;
+}
+
+.center-3 {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+}
+
+.center-4 {
+  position: fixed;
+  top: 27%;
+  left: -15%;
+}
+
+.center-5 {
+  position: fixed;
+  top: 25%;
+  left: -28%;
+}
+
+.center-6 {
+  position: fixed;
+  top: 18%;
+  left: -45%;
+}
+
+.center-7 {
+  position: fixed;
+  top: 19%;
+  left: -65%;
+}
+
+.cloud {
+  width: 300px;
+  height: 100px;
+  border-radius: 150px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  animation: move 90s infinite;
+  opacity: 0.65;
+}
+
+.cloud:after {
+  background: inherit;
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+}
+
+.cloud:before {
+  background: inherit;
+  content: '';
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  top: -90px;
+  right: 40px;
+}
+
+.default-cloud {
+  background: #ecfeff;
+
+}
+
+.clear-cloud {
+  background: #ecfeff;
+
+}
+
+.sunny-cloud {
+  background: #fef3c7;
+
+}
+
+.cloudy-cloud {
+  background: #e5e7eb;
+
+}
+
+.rain-cloud {
+  background: #9ca3af;
+
+}
+
+.overcast-cloud {
+  background: #d1d5db;
+
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(15%) scale(0.45);
+
+  }
+
+  100% {
+    transform: translateX(2000px) scale(0.45);
+  }
+}

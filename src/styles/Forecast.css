@@ -44,3 +44,39 @@
   background-color: #d1d5db;
   box-shadow: 3px 3px 10px 3px #d1d5db;
 }
+
+.forecast-container div:nth-child(2) {
+  animation: slide-left 0.5s linear 0.3s 1 backwards;
+}
+
+.forecast-container div:nth-child(3) {
+  animation: slide-left 0.5s linear 0.4s 1 backwards;
+}
+
+.forecast-container div:nth-child(4) {
+  animation: slide-left 0.5s linear 0.5s 1 backwards;
+}
+
+.forecast-container div:nth-child(5) {
+  animation: slide-left 0.5s linear 0.6s 1 backwards;
+}
+
+.forecast-container div:nth-child(6) {
+  animation: slide-left 0.5s linear 0.7s 1 backwards;
+}
+
+.forecast-container div:nth-child(7) {
+  animation: slide-left 0.5s linear 0.8s 1 backwards;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
